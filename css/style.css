@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@font-face {
+  font-family: "azer";
+  src: url("../assets/fonts/ar/azer.woff2") format("woff2");
+}
+@font-face {
+  font-family: "29LTZaridTextMedium";
+  src: url("../assets/fonts/ar/29LTZaridTextMedium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "HacenLinerXL";
+  src: url("../assets/fonts/ar/HacenLinerXL.ttf") format("woff2");
+}
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  background: arvo;
+  font-family: "Montserrat", sans-serif;
+  font-size: 99px;
+  text-align: center;
+}
+
+.sloganText {
+  font-family: "azer", arial;
+  font-size: 60px;
+  fill: blue;
+}
+
+.introAnimationEnder {
+  position: relative;
+  top: 50%;
+}
+
+.section2 {
+  height: 850px;
+  background-color: rgb(158, 200, 200);
+  overflow: hidden;
+}
+.section2 .hi {
+  font-family: "azer";
+}/*# sourceMappingURL=style.css.map */

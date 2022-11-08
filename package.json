@@ -1,0 +1,19 @@
+{
+  "name": "jabal.team",
+  "version": "1.0.0",
+  "description": "Jabal Team npm package .",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lorens-osman-dev/Jabal.team.git"
+  },
+  "author": "Lorens Osman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lorens-osman-dev/Jabal.team/issues"
+  },
+  "homepage": "https://github.com/lorens-osman-dev/Jabal.team#readme"
+}

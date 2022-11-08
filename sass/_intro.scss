@@ -1,0 +1,22 @@
+.sloganText{
+    font-family: $arFont1;
+    font-size: 60px;
+    fill:blue;
+}
+
+// الإنترو أنيميشن أندر و السيكشن تو هما نفس الشيء ولكن تم فصلهما في التنسيق لأن 
+// كلاس الإنترو إنيميشن أنتر يحوي التنسيقات الضرورية لإيقاف أنيميشن الإنترو بينما كلاس 
+// سيكشن تو هو للتنسيق فقط
+.introAnimationEnder{
+    position: relative; // ريلاتيف بالنسبة للبودي
+    top: 50%;
+
+}
+.section2{
+    height: 850px;
+    background-color: rgb(158, 200, 200);
+    overflow: hidden;// لأن الحركات دائما تزيد الأبعاد فيظهر سكرول بار لا نريده
+    .hi{
+        font-family:"azer";
+    }
+}

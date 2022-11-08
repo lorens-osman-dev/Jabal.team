@@ -1,0 +1,34 @@
+// import Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
+
+@font-face {
+  font-family:"azer";
+  src: url("../assets/fonts/ar/azer.woff2") format("woff2");
+}
+@font-face {
+  font-family:"29LTZaridTextMedium";
+  src: url("../assets/fonts/ar/29LTZaridTextMedium.woff2") format("woff2");  
+}
+@font-face {
+  font-family:"HacenLinerXL";
+  src: url("../assets/fonts/ar/HacenLinerXL.ttf") format("woff2");
+}
+
+// Font Variables Decliration
+
+$enFont  : 'Montserrat', sans-serif;
+
+$arFont1 : 'azer',arial;
+$arfont2 : 'HacenLinerXL' ,arial;
+$arfont3 : '29LTZaridTextMedium' ,arial;
+$arfont4 : 'Lalezar' ,arial;
+$arfont5 : 'Aref Ruqaa' ,arial;
+
+
+// Color Variables Decliration
+
+$bgColor : #ddd;

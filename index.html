@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jabal</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- INTRO START  -->
+  <div class="introAnimationStarter" style="height: 200%; width: 100%;">
+  
+  <div class="main">
+    <svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+      <mask id="m">
+        <g class="cloud1">
+          <rect fill="#fff" width="100%" height="801" y="799" />
+          <image   href="assets/img/intro/cloud1Mask.jpg" width="1200" height="800"/>
+        </g>
+      </mask>
+      
+      <image class="sky" href="assets/img/intro/sky.jpg"  width="1200" height="590" />
+      <image class="mountBg" href="assets/img/intro/mountBg.webp" width="1200" height="800"/>    
+      <image class="mountMg" href="assets/img/intro/mountMg.webp" width="1200" height="800"/>    
+      <image class="cloud2" href="assets/img/intro/cloud2.webp" width="1200" height="800"/>    
+      <image class="mountFg" href="assets/img/intro/mountFg.webp" width="1200" height="800"/>
+      <image class="cloud1" href="assets/img/intro/cloud1.webp" width="1200" height="800"/>
+      <image class="cloud3" href="assets/img/intro/cloud3.webp" width="1200" height="800"/>
+      <text fill="#fff" x="450" y="200">Jabal</text>
+      <polyline class="arrow" fill="#fff" points="599,250 599,289 590,279 590,282 600,292 610,282 610,279 601,289 601,250" />
+      
+      <g mask="url(#m)">
+        <rect fill="#fff" width="100%" height="100%" />      
+        <text class="jabalTeamText" x="300" y="200" fill="#162a43">Jabal Team</text>
+        <text class="sloganText"  x="380" y="350" >مُتعَةُ السِياحَة التُركِيَة</text>
+        
+      </g>
+      
+      <rect id="arrowBtn2" width="100" height="100" opacity="0" x="550" y="220" style="cursor:pointer"/>
+    </svg>
+
+  </div>
+  <!-- INTRO END  -->
+  </div>
+  <div class="section2 introAnimationEnder">
+    <p class="hi">مرحبا</p>
+  </div>
+
+
+
+<!-- JAVASCRIPT SCRIPTS START  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js"></script>
+<script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+<script src="js/main.js"></script>
+
+<!-- JAVASCRIPT SCRIPTS END  -->
+
+</body>
+</html>

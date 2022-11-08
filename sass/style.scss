@@ -1,0 +1,22 @@
+// varibales import 
+ @import "_variables";
+
+* 
+,::after,
+::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    width:100%;
+    height:100%;
+    background:arvo ;
+    font-family: $enFont;
+    font-size:99px;
+    text-align:center;
+}
+
+@import "intro";
+
