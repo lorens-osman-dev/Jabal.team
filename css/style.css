@@ -73,7 +73,6 @@ body, html {
 .section_no2 .div_wrap {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  background-color: aqua;
 }
 .section_no2 .div_wrap .img_wrap img {
   max-width: 300px;
