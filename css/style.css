@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap");
 @font-face {
   font-family: "azer";
   src: url("../assets/fonts/ar/azer.woff2") format("woff2");
@@ -25,7 +26,6 @@
 body, html {
   width: 100%;
   height: 100%;
-  background: arvo;
   font-family: "Montserrat", sans-serif;
   font-size: 99px;
   text-align: center;
@@ -37,16 +37,145 @@ body, html {
   fill: blue;
 }
 
-.introAnimationEnder {
+.hide {
+  visibility: hidden;
   position: relative;
-  top: 50%;
 }
 
-.section2 {
-  height: 850px;
-  background-color: rgb(158, 200, 200);
+.sections_wrapper {
+  background-color: red;
+  height: 500vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.section {
+  background-color: rgb(166, 200, 158);
   overflow: hidden;
 }
-.section2 .hi {
+.section .hi {
   font-family: "azer";
+}
+
+.section_no2 {
+  background: -webkit-gradient(linear, left top, right top, from(#d5f1cb), to(#bfd1b8));
+  background: linear-gradient(90deg, #d5f1cb 0%, #bfd1b8 100%);
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.section_no2 .div_wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: aqua;
+}
+.section_no2 .div_wrap .img_wrap img {
+  max-width: 300px;
+  max-height: 300px;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.jabalMove {
+  -webkit-animation: text-shadow 1.5s ease-in-out infinite;
+          animation: text-shadow 1.5s ease-in-out infinite;
+}
+
+.jabalMove:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+@-webkit-keyframes text-shadow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+  }
+  20% {
+    -webkit-transform: translateY(-1em);
+            transform: translateY(-1em);
+    text-shadow: 0 0.125em 0 #0c2ffb, 0 0.25em 0 #2cfcfd, 0 -0.125em 0 #fb203b, 0 -0.25em 0 #fefc4b;
+  }
+  40% {
+    -webkit-transform: translateY(0.5em);
+            transform: translateY(0.5em);
+    text-shadow: 0 -0.0625em 0 #0c2ffb, 0 -0.125em 0 #2cfcfd, 0 0.0625em 0 #fb203b, 0 0.125em 0 #fefc4b;
+  }
+  60% {
+    -webkit-transform: translateY(-0.25em);
+            transform: translateY(-0.25em);
+    text-shadow: 0 0.03125em 0 #0c2ffb, 0 0.0625em 0 #2cfcfd, 0 -0.03125em 0 #fb203b, 0 -0.0625em 0 #fefc4b;
+  }
+  80% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+  }
+}
+
+@keyframes text-shadow {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+  }
+  20% {
+    -webkit-transform: translateY(-1em);
+            transform: translateY(-1em);
+    text-shadow: 0 0.125em 0 #0c2ffb, 0 0.25em 0 #2cfcfd, 0 -0.125em 0 #fb203b, 0 -0.25em 0 #fefc4b;
+  }
+  40% {
+    -webkit-transform: translateY(0.5em);
+            transform: translateY(0.5em);
+    text-shadow: 0 -0.0625em 0 #0c2ffb, 0 -0.125em 0 #2cfcfd, 0 0.0625em 0 #fb203b, 0 0.125em 0 #fefc4b;
+  }
+  60% {
+    -webkit-transform: translateY(-0.25em);
+            transform: translateY(-0.25em);
+    text-shadow: 0 0.03125em 0 #0c2ffb, 0 0.0625em 0 #2cfcfd, 0 -0.03125em 0 #fb203b, 0 -0.0625em 0 #fefc4b;
+  }
+  80% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    text-shadow: 0 0 0 #0c2ffb, 0 0 0 #2cfcfd, 0 0 0 #fb203b, 0 0 0 #fefc4b;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation: none !important;
+            animation: none !important;
+    -webkit-transition: none !important;
+    transition: none !important;
+  }
+}
+.airplane_section {
+  height: 350vh;
+  width: 90vw;
+  background-color: rgb(158, 200, 200);
+  font-size: 30px;
+  font-family: "azer", arial;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+.airplane_section .airplane_img {
+  width: 90vw;
+}
+.airplane_section .airplane_img img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=style.css.map */
