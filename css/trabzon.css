@@ -1,0 +1,227 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lalezar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@400;500;600;700;800&display=swap");
+@font-face {
+  font-family: "azer";
+  src: url("../assets/fonts/ar/azer.woff2") format("woff2");
+}
+@font-face {
+  font-family: "29LTZaridTextMedium";
+  src: url("../assets/fonts/ar/29LTZaridTextMedium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "HacenLinerXL";
+  src: url("../assets/fonts/ar/HacenLinerXL.ttf") format("woff2");
+}
+*,
+::after,
+::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
+.sections_wrapper {
+  height: 500vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 30px;
+  background-color: rgb(239, 146, 146);
+}
+.sections_wrapper .section {
+  border: 1px solid black;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em;
+  width: 100%;
+  height: 100vh;
+  background-size: 400% 400%;
+}
+
+.container {
+  max-width: 1160px;
+  border-radius: 4px;
+  max-height: 660px;
+  height: 90vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.rgbKineticSlider {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+}
+
+.rgbKineticSlider canvas {
+  position: absolute;
+  display: block;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  padding: 20px;
+}
+
+nav a.next {
+  right: 40px;
+}
+
+nav a.prev {
+  left: 40px;
+}
+
+svg {
+  width: 28px;
+}
+
+.menu {
+  position: absolute;
+  top: 20px;
+  height: 30px;
+  width: 40px;
+  right: 30px;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+.slider {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: -webkit-gradient(linear, left top, right top, color-stop(40%, #fff), color-stop(0%, transparent));
+  background: linear-gradient(to right, #fff 40%, transparent 0%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
+}
+.slider:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+}
+.slider.prev svg {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.wrapper {
+  height: 15%;
+  width: 100%;
+  bottom: 0;
+  right: 50%;
+  -webkit-transform: translatex(50%);
+          transform: translatex(50%);
+  position: absolute;
+  color: #f5f5f5;
+  border: 1px solid black;
+}
+.wrapper .cloud_wraper img {
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: absolute;
+}
+
+@media (max-width: 986px) {
+  .ticket-list:nth-child(3),
+.ticket-list:nth-child(4) {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .ticket-list:nth-child(2) {
+    display: none;
+  }
+  nav a.next {
+    right: 20px;
+  }
+  nav a.prev {
+    left: 20px;
+  }
+}
+@media (max-width: 590px) {
+  .ticket-list:nth-child(5),
+.ticket-list:nth-child(6) {
+    display: none;
+  }
+  body {
+    padding: 1em;
+  }
+  .slider {
+    width: 26px;
+    height: 26px;
+  }
+  .slider svg {
+    width: 20px;
+  }
+  .slider:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .main-nav {
+    top: 0;
+    padding: 20px 5px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  nav a.next {
+    left: 48px;
+  }
+  nav a.prev {
+    left: 10px;
+  }
+}/*# sourceMappingURL=trabzon.css.map */
